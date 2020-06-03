@@ -2,7 +2,9 @@
 
 ![profile picture](https://github.com/Irratzo/about-myself/blob/master/img/picture_64pt.jpg)
 
-![scdb](https://github.com/Irratzo/about-myself/blob/master/img/2017_bsc-thesis_gui_diff.png)
+![scdb-db](https://github.com/Irratzo/about-myself/blob/master/img/2017_bsc-thesis_gui_db.png)
+
+![scdb-diff](https://github.com/Irratzo/about-myself/blob/master/img/2017_bsc-thesis_gui_diff.png)
 
 ![aixvipmap](https://github.com/Irratzo/about-myself/blob/master/img/2018_hiwi_aixvipmap.jpg)
 
