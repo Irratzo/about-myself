@@ -1,2 +1,2 @@
-# about-myself
-short presentation about myself
+# Johannes Wasmer #
+
