@@ -1,23 +1,9 @@
-<!-- Images @ github remote -->
-<!-- ![profile picture](https://github.com/Irratzo/about-myself/blob/master/img/picture_64pt.jpg) -->
-<!-- ![logos](https://github.com/Irratzo/about-myself/blob/master/img/logos.png) -->
-<!-- ![scdb-db](https://github.com/Irratzo/about-myself/blob/master/img/2017_bsc-thesis_gui_db.png) -->
-<!-- ![scdb-diff](https://github.com/Irratzo/about-myself/blob/master/img/2017_bsc-thesis_gui_diff.png) -->
-<!-- ![aixvipmap](https://github.com/Irratzo/about-myself/blob/master/img/2018_hiwi_aixvipmap.jpg) -->
-<!-- ![treemap-plugin](https://github.com/Irratzo/about-myself/blob/master/img/2018_gsp_lateSender_allInOne.png) -->
-<!-- ![banddos-preprocessor](https://github.com/Irratzo/about-myself/blob/master/img/2019_sisclab_preprocessor.png) -->
-<!-- ![banddos-gui](https://github.com/Irratzo/about-myself/blob/master/img/2019_sisclab_web-frontend.png) -->
-
-<!-- Links: -->
-<!-- - 2014-17 BSc in Scientific Programming at FH Aachen / [Access e.V.](http://www.access.rwth-aachen.de/) -->
-<!-- - 2017-21 MSc Simulation Science at RWTH Aachen / [FZ Jülich](https://www.fz-juelich.de) -->
-<!-- [Jülich Supercomputing Centre](https://www.fz-juelich.de/ias/jsc/EN) -->
-<!-- [Cube performance report explorer](https://www.scalasca.org/software/cube-4.x) -->
-<!-- [Institute of Quantum Theory of Materials](https://www.fz-juelich.de/pgi/pgi-1/EN) -->
-<!-- [OPH e.V.](https://www.oph.rwth-aachen.de) -->
-
-
 # Johannes Wasmer <img style="float: right;" width="100" src="img/picture_64pt.jpg"> 
+
+   
+
+
+
 
 <!-- <img src="picture_64pt.jpg"> -->
 <!-- ![<any name here>](picture_64pt.jpg) -->
@@ -111,4 +97,3 @@ Yes. It must be a professor of one of the departments affiliated with my course 
 Yes, if I pass all exams in summer, I will have one exam to finish in February / March, High Performance Computing, 6 credit points. 
 
 I can list all detailed regulations on request in a mail.
-
