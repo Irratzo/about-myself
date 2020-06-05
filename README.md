@@ -69,7 +69,7 @@
 
 - 2019 at [Institute of Quantum Theory of Materials, Jülich](https://www.fz-juelich.de/pgi/pgi-1/EN) (Prof. Blügel)
 
-- Product: bandstructure and DOS visualization tool
+- Product: [bandstructure and DOS visualization tool](https://github.com/JuDFTteam/masci-tools/tree/studentproject18ws/studentproject18w)
 
 - Wrote a generic HDF5 preprocessor and the Jupyter GUI
 
