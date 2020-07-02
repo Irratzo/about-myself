@@ -83,32 +83,32 @@
 
 - a charitable association providing living essentials to 200 students
 
-# Live Demo
+<!-- # Live Demo -->
 
-# Thesis Administrative Questions
+<!-- # Thesis Administrative Questions -->
 
-> how many months will the actual project be and when exactly (if it is already fixed)
+<!-- > how many months will the actual project be and when exactly (if it is already fixed) -->
 
-Regulations say 18 weeks, with max. 6 weeks extensions under exceptional circumstances.
+<!-- Regulations say 18 weeks, with max. 6 weeks extensions under exceptional circumstances. -->
 
-> what are the exact formal requirements for the thesis from your university (number of hours per week, topic, ...)
+<!-- > what are the exact formal requirements for the thesis from your university (number of hours per week, topic, ...) -->
 
-- Hours per week: the thesis is 30 credit points, so 50 to 40 hours per week.
-- Topic: no official restrictios. language: English.
-- Colloquium may be held before submission of thesis.
-- Registration process: may delay possible start to November. Because exam session here ends with October.
-- external supervisor: must have a university degree.
-- a time schedule must be worked out beforehand and handed in to the examination board before approval
+<!-- - Hours per week: the thesis is 30 credit points, so 50 to 40 hours per week. -->
+<!-- - Topic: no official restrictios. language: English. -->
+<!-- - Colloquium may be held before submission of thesis. -->
+<!-- - Registration process: may delay possible start to November. Because exam session here ends with October. -->
+<!-- - external supervisor: must have a university degree. -->
+<!-- - a time schedule must be worked out beforehand and handed in to the examination board before approval -->
 
-# Thesis Administrative Questions
+<!-- # Thesis Administrative Questions -->
 
-> will there be an official supervisor from Aachen? Do you already know who this could be?
+<!-- > will there be an official supervisor from Aachen? Do you already know who this could be? -->
 
-Yes. It must be a professor of one of the departments affiliated with my course of study. Prof. Blügel would be suitable and I think willing. Other options can be explored.
+<!-- Yes. It must be a professor of one of the departments affiliated with my course of study. Prof. Blügel would be suitable and I think willing. Other options can be explored. -->
 
-> will you be done with all exams and work 100% of your working time on the thesis, or will you have other duties (e.g. pending exams or projects) in parallel? (It’s not a problem if it’s less than 100%, as long as we know what to expect)
+<!-- > will you be done with all exams and work 100% of your working time on the thesis, or will you have other duties (e.g. pending exams or projects) in parallel? (It’s not a problem if it’s less than 100%, as long as we know what to expect) -->
 
-Yes, if I pass all exams in summer, I will have one exam to finish in February / March, High Performance Computing, 6 credit points. 
+<!-- Yes, if I pass all exams in summer, I will have one exam to finish in February / March, High Performance Computing, 6 credit points.  -->
 
-I can list all detailed regulations on request in a mail.
+<!-- I can list all detailed regulations on request in a mail. -->
 
