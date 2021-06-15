@@ -17,14 +17,14 @@
 <!-- [OPH e.V.](https://www.oph.rwth-aachen.de) -->
 
 
-# Johannes Wasmer <img style="float: right;" width="100" src="img/picture_64pt.jpg"> 
+# Johannes Wasmer <img style="float: right;" width="100" src="img/picture_64pt.jpg">
 
 <!-- <img src="picture_64pt.jpg"> -->
 <!-- ![<any name here>](picture_64pt.jpg) -->
 
 <!-- <img src="picture_64pt.jpg" width="10%"> -->
 
-- Bachelor: software engineering & applied math 
+- Bachelor: software engineering & applied math
 
 - Master:
   - core: numerical methods & HPC
@@ -61,7 +61,7 @@
 
 - Koschmieder, L., Hojda, S., Apel, M. et al. AixViPMaP®—an Operational Platform for Microstructure Modeling Workflows. Integr Mater Manuf Innov 8, 122–143 (2019). https://doi.org/10.1007/s40192-019-00138-3
 
-- Contributed to HDF5 exchange format of the platform 
+- Contributed to HDF5 exchange format of the platform
 
 <img style="float: center;" width="640" src="img/2018_hiwi_aixvipmap.jpg">
 
@@ -77,11 +77,21 @@
 
 <img style="float: center;" width="1500" src="img/2019_sisclab_web-frontend.png">
 
+# Master thesis
+
+- 2020-2021 at [Institute of Quantum Theory of Materials, Jülich](https://www.fz-juelich.de/pgi/pgi-1/EN) (Prof. Blügel)
+
+- Contributing to the libraries
+  - [aiida-kkr-ml](https://iffgit.fz-juelich.de/aiida-kkr-ml): Machine learning potentials (MLPs) for [aiida-kkr](aiida-kkr.readthedocs.io/),
+  - [aiida-jutools](https://github.com/JuDFTteam/aiida-jutools/tree/develop), tools for [AiiDA](https://www.aiida.net/) users and developers,
+  - [masci-tools](https://github.com/JuDFTteam/masci-tools/tree/develop), materials science utilities.
+
+
 # Sparetime <img style="float: right;" width="200" src="img/oph.png">
 
-- chairman of [OPH e.V.](https://www.oph.rwth-aachen.de)
+- 2017-2020 Co-chairman of [OPH e.V.](https://www.oph.rwth-aachen.de)
 
-- a charitable association providing living essentials to 200 students
+- A charitable association providing living essentials to 200 students
 
 <!-- # Live Demo -->
 
@@ -111,4 +121,3 @@
 <!-- Yes, if I pass all exams in summer, I will have one exam to finish in February / March, High Performance Computing, 6 credit points.  -->
 
 <!-- I can list all detailed regulations on request in a mail. -->
-
