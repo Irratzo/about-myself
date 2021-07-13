@@ -55,7 +55,7 @@
 
 - Wrote treemap visualization plugin for [Cube performance report explorer](https://www.scalasca.org/software/cube-4.x)
 
-<img style="float: center;" width="1500" src="img/2018_gsp_lateSender_allInOne.png">
+<img style="float: center;" width="1500" src="img/2018_gsp_ompFor_allInOne.png">
 
 # Student assistant
 
@@ -79,17 +79,23 @@
 
 # Master thesis
 
-- 2020-2021 at [Institute of Quantum Theory of Materials, Jülich](https://www.fz-juelich.de/pgi/pgi-1/EN) (Prof. Blügel)
+- 2020-2021 at [Institute of Quantum Theory of Materials, Jülich](https://www.fz-juelich.de/pgi/pgi-1/EN) with Dr. Rüßmann
 
-- Contributing to the libraries
-  - [aiida-kkr-ml](https://iffgit.fz-juelich.de/aiida-kkr-ml): Machine learning potentials (MLPs) for [aiida-kkr](aiida-kkr.readthedocs.io/),
-  - [aiida-jutools](https://github.com/JuDFTteam/aiida-jutools/tree/develop), tools for [AiiDA](https://www.aiida.net/) users and developers,
-  - [masci-tools](https://github.com/JuDFTteam/masci-tools/tree/develop), materials science utilities.
+<!-- - Contributing to the libraries -->
+<!--   - [aiida-kkr-ml](https://iffgit.fz-juelich.de/aiida-kkr-ml): Machine learning potentials (MLPs) for [aiida-kkr](aiida-kkr.readthedocs.io/), -->
+<!--   - [aiida-jutools](https://github.com/JuDFTteam/aiida-jutools/tree/develop), tools for [AiiDA](https://www.aiida.net/) users and developers, -->
+<!--   - [masci-tools](https://github.com/JuDFTteam/masci-tools/tree/develop), materials science utilities. -->
+
+- Product: [machine learning framework for a density functional theory code](https://iffgit.fz-juelich.de/aiida-kkr-ml)
+
+- Investigating structural representations of impurity embeddings for surrogate models
+
+<img style="float: center;" width="1200" src="img/2021_pgi_aiida-kkr-ml_architecture.png">
 
 
 # Sparetime <img style="float: right;" width="200" src="img/oph.png">
 
-- 2017-2020 Co-chairman of [OPH e.V.](https://www.oph.rwth-aachen.de)
+- 2017-2020 Chairman of [OPH e.V.](https://www.oph.rwth-aachen.de)
 
 - A charitable association providing living essentials to 200 students
 
@@ -121,3 +127,6 @@
 <!-- Yes, if I pass all exams in summer, I will have one exam to finish in February / March, High Performance Computing, 6 credit points.  -->
 
 <!-- I can list all detailed regulations on request in a mail. -->
+
+
+<!-- RISE pdf export pages: 5,10,11,12,15,16,19,20,24,25,26,30,31,34,35 -->

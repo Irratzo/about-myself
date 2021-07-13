@@ -1,0 +1,34 @@
+name: rise-presentation
+channels:
+  - defaults
+  - conda-forge
+  - anaconda
+dependencies:
+   - git               # for editable installs
+   - pip               # for editable installs
+   - nbdime            # dev tools: jupyter: nb diffs
+   - jupytext          # dev tools: jupyter: nb as py scripts for git
+   - notebook          # rise does not yet support jupyterlab
+   - rise              # reveal.js presentations with jupyter
+   - nbconvert         # for exporting rise presentations
+   - jupyter_contrib_nbextensions # needed for jupyter nbconvert
+   - ipympl            # | for %matplotlib widget
+   - ipydatawidgets    # |
+
+# How to use:
+# 1. open notebook
+# > conda activate rise-presentation
+# > jupyter notebook
+# 2. edit presentation in notebook, use enter slideshow button
+# 3. optional: convert to reveal.js HTML presentation (no notebook needed):
+#   (note that in default theme, presentation looks better in notebook than HTML)
+# > jupyter nbconvert --to slides presentation.ipynb
+# 4. optional: convert to PDF
+# > https://rise.readthedocs.io/en/stable/exportpdf.html
+#
+#
+# Rerences as of 2021-07-13:
+# - https://jupyter-notebook.readthedocs.io
+# - https://rise.readthedocs.io
+# - https://nbconvert.readthedocs.io
+# - https://jupyter-contrib-nbextensions.readthedocs.io
