@@ -1,0 +1,241 @@
+﻿%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Notes:
+% This tikz file is meant for KtikZ output.
+% 1) In KtikZ, set template path: /home/johannes/pgi/thesis/master-thesis/doc/src/fig/ktikz_template.tpl
+% 2) Export to pdf.
+% 3) In document, insert with \includegraphics[width=1.0\textwidth]{../fig/mypath/mytikzpic.pdf}
+%
+% This simplifies scaling issues.
+%
+% For poster A0, encountered incorrect scaling.
+% Tried resolution by replacing all units with unitless (=pt, apparently).
+% Conversion table:
+% - 1 pt -> 1 (pt)
+% - 1 cm -> 28.45274 (pt)
+% - 1 em -> 10.00002 (pt)
+% - Exceptions:
+%   - 1 em -> 0.35 IF EITHER node coord (0,2em) OR node rel. positioning (['right=2em of] --> (0,.7), ...[right=0.7 of])
+%   - x\textwidth -> 100*x pt
+%
+% Unit conversion did not resolve scaling issue. Instead, exported to pdf and included that as a graphic.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tikzstyle{v}=[node distance=48.79223]
+\tikzstyle{h}=[node distance=113.811]
+\usetikzlibrary{positioning,shapes,arrows}
+\usetikzlibrary{arrows.meta}
+\pgfdeclarelayer{higher}
+\pgfdeclarelayer{highest}
+\pgfsetlayers{main,higher,highest}
+\pgfkeys{%
+    /tikz/every node/.style={%
+        transform shape,
+        %font=\ttfamily\normalsize,
+        text=helmholtzdarkblue,
+        minimum width=1.5em,
+        align=center,
+        text width=99.58459,
+        inner sep=0.5em,
+        %minimum height=28.45274
+        minimum height=3em
+    },
+    /box/node color/.style={%
+        % draw = node outline color
+        % comment out draw: no outline
+        % draw=fzjblue,%#1!80!black,
+        %
+        % fill color:
+        % without overhead lighting overlay effect
+        top color=#1,
+        bottom color=#1,
+       % % with overhead lighting overlay effect
+       %  top color=#1!80!white,
+       %  bottom color=#1!80!black,
+       %
+       rounded corners=0.4em,
+    },
+    /box/active/.style={%
+        rectangle,
+        /box/node color=helmholtzhighlight,
+    },
+    /box/passive/.style={%
+        rectangle,
+        /box/node color=fzjgray20,
+        text=fzjblack!40!fzjgray20,
+        dashed
+    },
+    /box/ml/.style={%
+        rectangle,
+        /box/node color=helmholtzhighlight,
+    },
+    /box/ml2/.style={%
+        rectangle,
+        /box/node color=helmholtzhighlight,
+    },
+    /box/invisible/.style={%
+        rectangle,
+        draw=fzjwhite,%#1!80!black,
+        top color=fzjwhite,
+        bottom color=fzjwhite,
+		    text=fzjwhite
+    },
+    /arr/active/.style={%
+        -{Triangle[scale=0.07em]},
+        line width=2,
+		    color=helmholtzlightblue,
+    },
+    /arr/ml/.style={%
+        -{Triangle[scale=0.07em]},
+        line width=2,
+		    color=mint,
+    },
+    /arr/ml2/.style={%
+        -{Triangle[scale=0.07em]},
+        line width=2,
+		    color=mint,
+    },
+    /arr/mlUnderpassOut/.style={% underpass (no arrow, shortened)
+		-{|[scale=0.05em]},
+        line width=2,
+		    color=mint,
+	    shorten >=0.3em
+    },
+    /arr/mlUnderpassIn/.style={%
+		{|[scale=0.05em]}-{Triangle[scale=0.07em]},
+        line width=2,
+		    color=mint,
+		shorten <=0.3em
+    },
+    /arr/passive/.style={%
+        -latex,
+        line width=2,
+		    dashed
+    },
+    /arr/line/.style={%
+        -,
+        line width=2,
+		    color=mint,
+    },
+%     /class/main1/.style={%
+%         rectangle,
+%         /box/node color=fzjgreen,
+%     },
+%     /class/main2/.style={%
+%         rectangle split,
+% 		rectangle split parts=2,
+% 		text width=140,
+%         /box/node color=fzjgreen,
+%     },
+%     /class/other1/.style={%
+%         rectangle,
+%         /box/node color=white!40!fzjgreen,
+%     },
+%     /class/other2/.style={%
+%         rectangle split,
+% 		rectangle split parts=2,
+%         /box/node color=white!40!fzjgreen,
+%     },
+%     /class/template/.style={%
+%         rectangle,
+% 		minimum width=17.072,
+% 		minimum height=17.072,
+%         text width=14.226,
+%         /box/node color=white!40!fzjgreen,
+% 		dashed
+%     },
+%     /class/cube/.style={%
+%         rectangle,
+%         /box/node color=fzjlightblue,
+%     },
+%     /class/uses/.style={%
+%         -angle=60,
+%         line width=2,
+% 		dashed
+%     },
+%     /class/has/.style={%
+%         -angle=60,
+%         line width=2,
+%     },
+%     /class/isA/.style={%
+%         -latex,
+%         line width=3,
+%     },
+%     /class/composition/.style={%
+%         -diamond,
+%         line width=2,
+%     },
+%     /class/multiarrow/.style={%
+%         /class/arrow,
+%         double copy shadow={shadow xshift=2.845,shadow yshift=-5.691,/class/arrow},
+%     },
+}
+
+
+\begin{tikzpicture}[
+    scale=0.75, transform shape, %font=\ttfamily,
+    uses/.style={-{angle 60},line width=2,dashed},
+%     auto
+    ]
+
+
+
+
+	% primary surrogate, target is potential (KKR)
+\draw node[/box/active,v] (atoms) {Atomic Features\\\( A = \{ \vec{r}_i, a_i, \vec{G}, \vec{S}_i, \dots \}\)};
+	% \draw node[/box/active,v] (dft) [right=.7 of atoms] {\textit{Ab initio} method\\\textbf{KKR-GF} \faGears};
+    % \draw node[/box/active,v] (dft) [right=.7 of atoms] {\textbf{Simulator}\\\logoAiida -- KKRimp\,\logoKKRimpCircledXTwo};
+	\draw node[/box/active,v] (dft) [right=.7 of atoms] {{\footnotesize\textbf{First-Principles Simulator}}\\\logoJuDFT Codes};
+	\draw node[/box/active,v] (primary) [right=.7 of dft] {Primary Output\\  \(n(\vec{r})\), \(V(\vec{r})\)};
+	\draw node[/box/active,v] (secondary) [right=.7 of primary] {Secondary Output\\ \(E_{tot}\), DOS, \(J_{ij}\)'s, \(\dots\)};
+% E_tot ausgelassen; E(k) = bandstructure, D(E) = DOS
+	\draw node[/box/active,v] (tertiary) [right=.7 of secondary] {Tertiary Output\\  \(T_c\), \(\vec{S}_i\)'s, \(\dots\)};
+% sigma = elastic moduli, delta G_f^0 = formation energy, topological invariant ausgelassen, T_c supercond crit temp
+	\draw[/arr/active] (atoms) -- (dft);
+	\draw[/arr/active] (dft) -- (primary);
+	\draw[/arr/active] (primary) -- (secondary);
+	\draw[/arr/active] (secondary) -- (tertiary);
+    %
+	\draw node[/box/ml,v] (representation) [below=.7 of atoms] {Representation\\\(\ket{A;\lambda\mu}\)};
+
+% note: we draw surrogate-2 & env first cause need arrow rep-surr-2 to lie below surr-1
+
+% surrogate-2 (secondary)
+	\draw node[/box/ml2,v] (surrogate-2) [below=.7 of secondary] {Secondary Emulator\\  {\footnotesize\textit{Magnetic properties}} \logoNeuralNetworkSolidCircledHelmholtzdarkblueBgWhite};
+	\draw node[/box/active,v] (spirit) [below=.7 of tertiary] {Multiscale simulator\\\logoAiida\hspace{-0.3em}-Spirit\,\logoSpiritCircledXTwo};
+	 \begin{scope}[transform canvas={yshift=-7}]
+		\draw[/arr/ml2] (surrogate-2) -- (spirit);
+	 \end{scope}
+
+% surrogate-1 (primary)
+	\draw node[/box/ml,v] (surrogate-1) [below=.7 of primary] {\textbf{Primary Emulator}\\{\scriptsize{\textit{Charge density, potential}}} \logoNeuralNetworkSolidCircledHelmholtzdarkblueBgWhite};
+	\draw[/arr/ml] (atoms) -- (representation);
+	% \draw[/arr/active] (atoms) |- (surrogate);
+	 \begin{scope}[transform canvas={yshift=-7}]
+		% shift arrow st surrogate input arrows not overlaid
+		% \draw[/arr/ml2] (representation) -- (surrogate-2) node[midway,right=-4.4,yshift=-6.0] {\textit{\textcolor{mint}{invariant}}};
+		\draw[/arr/mlUnderpassOut] (representation) -- (surrogate-1) node[midway,right=-2.1,yshift=-6.0] {\textit{\textcolor{mint}{invariant}}};
+		\draw[/arr/mlUnderpassIn] (surrogate-1) -- (surrogate-2);
+	 \end{scope}
+	 \begin{scope}[transform canvas={yshift=7}]
+		% shift arrow st surrogate input arrows not overlaid
+		\draw[/arr/ml] (representation) -- (surrogate-1) node[midway,right=-2.1,yshift=-7.5] {\textit{\textcolor{mint}{equivariant}}};
+	 \end{scope}
+	% \draw[/arr/active] (dft) -- (surrogate-1) node[midway,right=-2.3,yshift=19,rotate=-22.5] {\textit{train}};
+	 \begin{scope}[transform canvas={xshift=-18}]
+	  	\draw[/arr/active] (primary) -- (surrogate-1) node[midway,right=-2.5,yshift=0,rotate=0] {\textit{\textcolor{helmholtzlightblue}{train}}};
+	 \end{scope}
+	\draw[/arr/mlUnderpassOut] [color=mint] (surrogate-1)  -- (primary);
+    %
+  \node[above=.7 of dft, minimum height=0] (dummypreserveheight) {}; % for arrow above in 6-kkr
+  \draw[/arr/mlUnderpassIn] (primary.north) -- ++(0,.7) -| (dft) node[midway,right=0.3,yshift=-10] {\textit{\textcolor{mint}{\logoAiida feedback}}};
+%
+%\draw[/arr/active] (primary) -- (surrogate-2) node[midway,right=-2.3,yshift=19,rotate=-22.5] {\textit{train}};
+ \begin{scope}[transform canvas={xshift=-0}]
+	\draw[/arr/active] (secondary) -- (surrogate-2) node[midway,right=-2.5,yshift=0,rotate=0] {\textit{\textcolor{helmholtzlightblue}{train}}};
+ \end{scope}
+
+
+% % poster block text - Block - The Idea
+% % for now, not inserted here put directly in document via textblock env.
+% \node[text width=4cm] at (13,-2) {};
+
+\end{tikzpicture}

@@ -99,10 +99,14 @@
 - [[#up][Up]]
 - [[#description][Description]]
 - [[#dependencies-documentation][Dependencies documentation]]
-- [[#format-syncing][Format syncing]]
+- [[#usage][Usage]]
+  - [[#environment][Environment]]
+  - [[#format-syncing][Format syncing]]
 - [[#update-2023-05-15][Update 2023-05-15]]
+  - [[#description-1][Description]]
   - [[#reverse-engineer-presentation-exports][Reverse engineer presentation exports]]
   - [[#research-on-hzdrheliport][Research on HZDR/HELIPORT]]
+  - [[#changes-2023-05-15][Changes 2023-05-15]]
 
 * Dependencies documentation
 RISE for classical Jupyer notebook (nb version).
@@ -123,11 +127,25 @@ Misc.
 
 As of <2023-05-15 Mon>, the nb version still seems more feature-complete. Eg,
 some shortcuts don't work in the lab version.
-* Format syncing
+* Usage
+** Environment
+As of <2023-05-15 Mon>, prefer the notebook version to the JupyterLab version of RISE.
+
+#+begin_src shell
+cd ~/src/about-myself
+micromamba activate rise-presentation
+jupyter notebook
+#+end_src
+
+Open =about_myself.ipynb=. Hit =M-r= (alt+r), or click presentation icon button
+in notebook toolbar, to start presentation. Click "?" symbol in left lower
+corner to see the RISE keyboard shortcuts.
+** Format syncing
 Call
 
 #+begin_src shell
 micromamba activate rise-presentation
+
 jupyter nbconvert --to markdown about_myself.ipynb; jupyter nbconvert --to slides about_myself.ipynb; jupyter nbconvert --to slides about_myself.ipynb --post serve
 #+end_src
 
@@ -136,8 +154,9 @@ browser. Print with the print options described [[https://rise.readthedocs.io/en
 
 Paste the content of the created Markdown file to README.md, below the README.md
 comment header.
-
 * Update 2023-05-15
+** Description
+Meeting with O. Knodel from HZDR about RSE/RDM, scientific workflows.
 ** Reverse engineer presentation exports
 In this repo, I have the same presentation in different file formats.
 
@@ -250,3 +269,4 @@ Knodel group.
 - [[https://www.google.com/search?q=oliver+knodel+hzdr][gsearch > olider knodel hzdr]]
   - [[https://www.hzdr.de/db/Cms?pOid=60532&pNid=0][hzdr working group "data management and HPC"]]
     - previous projects align well with my career path so far in RSE/RDM
+** Changes 2023-05-15
