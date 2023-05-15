@@ -10,15 +10,20 @@ dependencies:
    - jupytext          # dev tools: jupyter: nb as py scripts for git
    - notebook          # rise does not yet support jupyterlab
    - rise              # reveal.js presentations with jupyter
+   - jupyterlab        # successor of notebook
+   - jupyterlab_rise   # rise edition for jupyterlab
    - nbconvert         # for exporting rise presentations
    - jupyter_contrib_nbextensions # needed for jupyter nbconvert
    - ipympl            # | for %matplotlib widget
    - ipydatawidgets    # |
 
 # How to use:
-# 1. open notebook
-# > conda activate rise-presentation
+# 0. install environment
+# > conda/mamba/... env create -f environment.yml
+# 1. open notebook or lab
+# > conda/mamba/... activate rise-presentation
 # > jupyter notebook
+# > jupyter-lab ./
 # 2. edit presentation in notebook, use enter slideshow button
 # 3. optional: convert to reveal.js HTML presentation (no notebook needed):
 #   (note that in default theme, presentation looks better in notebook than HTML)
@@ -27,8 +32,14 @@ dependencies:
 # > https://rise.readthedocs.io/en/stable/exportpdf.html
 #
 #
-# Rerences as of 2021-07-13:
+# Rerences as of 2023-05-15:
+# - RISE for notebook
 # - https://jupyter-notebook.readthedocs.io
+# - https://github.com/damianavila/RISE
 # - https://rise.readthedocs.io
+# - RISE for lab
+# - https://jupyterlab.readthedocs.io
+# - https://github.com/jupyterlab-contrib/rise
+# - Misc
 # - https://nbconvert.readthedocs.io
 # - https://jupyter-contrib-nbextensions.readthedocs.io
